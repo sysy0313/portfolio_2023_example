@@ -7,7 +7,7 @@ header, main {min-width:900px;}
 
 /* header */
 header {
-    background:#FFF6E8;
+    background:#FFF9F0;
     position:fixed; left:0; top:0; width:100%; z-index:999;
     padding:30px 30px 0 30px;
 }
@@ -182,12 +182,21 @@ main #project_web1 .title h2 {
     display:flex; flex-flow:column nowrap;
     text-align:right;
 }
-main #project_web1 .title h2 > * {margin-bottom:25px;}
+main #project_web1 .title h2 > * {margin-bottom:15px;}
 main #project_web1 .title h2 .num {
     font-family: 'Caveat Brush'; color:#92B4EC; font-size:2.5rem;
 }
 main #project_web1 .title h2 em {
     font-size:2.188rem; letter-spacing:-0.02em; color:#333;
+}
+main #project_web1 .title h2 em::before {
+    content:''; display:block;
+    width:68px; height:68px; background:url(../images/eyeglasses.png);
+    margin-bottom:-60px; margin-left:-70px;
+}
+main #project_web1 .title h2 em::after{
+    content:''; display:block; 
+    width:110%; height:30px; background:#FFE69A; border-radius:30px; margin-top:-15px; margin-left:-10px;
 }
 main #project_web1 .title h2 .desc {
     margin-bottom:0; letter-spacing:-0.02em; color:#333;
@@ -205,7 +214,7 @@ main #project_web1 .contents .info_bg {
 main #project_web1 .contents .info_bg .img {
     position:relative; z-index:100; right:10%;
 }
-main #project_web1 .contents .info_bg .img img {width:120%;}
+main #project_web1 .contents .info_bg .img img {width:100%;}
 main #project_web1 .contents .info {
     width:500px;
     display:flex; flex-flow:column nowrap;
@@ -233,7 +242,7 @@ main #project_web1 .contents .info .link {
 }
 main #project_web1 .contents .info .link a {
     display:block;
-    background:#FFE69A; color:#fff;
+    background:#FFD232; color:#fff;
     padding:10px 20px; border-radius:20px;
     margin-right:10px;
     transition:all 0.3s;
