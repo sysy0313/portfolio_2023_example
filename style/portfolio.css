@@ -1,0 +1,198 @@
+/*  반응형 대비 최소제한 너비 설정 */
+header, main {min-width:900px;}
+
+/* header */
+header {
+    background:#FFF6E8;
+    position:fixed; left:0; top:0; width:100%; z-index:999;
+    padding:30px 30px 0 30px;
+}
+header nav {
+    border-top:2px solid #FFD232; border-bottom:5px solid #FFD232;
+    padding:16px 0;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+header nav .gnb {}
+header nav .gnb a {
+    font-size:1.25rem; font-weight:500;
+    letter-spacing:-0.02em; color:#7a7a7a; margin-right:25px; 
+    transition:all 0.3s; 
+}
+header nav .gnb a:last-child {margin-right:0;}
+header nav .gnb a:hover {color:#FFD232;}
+header nav .sns {}
+header nav .sns span {
+    font-size:1.25rem; font-weight:500;
+    letter-spacing:-0.02em; color:#7a7a7a; margin-right:15px;
+    
+}
+/* home */
+main {
+    background:#FFF6E8;
+}
+main > * {padding:0 30px;}
+main #home {
+    height:100vh; text-align:center;
+}
+main #home h1 {padding-top:200px;}
+main #home h1 img {}
+main #home .mouse {
+    position:absolute; left:50%; bottom:60px;
+    transform:translateX(-50%);
+    animation:mouse_move 1s linear alternate infinite;
+}
+main #home .mouse img {}
+/* skill */
+main #skill {padding:120px 0;}
+main #skill h1 {
+    font-size:3.125rem; letter-spacing:-0.02em; font-weight:700;
+    padding:25px;
+    border-bottom:2px solid #FFD232;
+    margin-bottom:64px;
+}
+main #skill .container {
+    display:flex; flex-flow:column wrap; align-items:center;
+    height:500px; 
+    margin:0 auto; width:95%;
+}
+main #skill .container li {
+    width:45%;
+    display:flex; flex-flow:row nowrap; align-items:center;
+    height:100px;
+    border-bottom:1px dashed #FFD232;
+    
+}
+main #skill .container li .icon {width:61px;}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width:calc(100% - 61px);
+    letter-spacing:-0.02em; line-height:32px;
+}
+/* profile */
+/* 제목 */
+main #profile {
+    padding:75px 30px 75px 0;
+}
+main #profile h1 {
+    text-align:right;
+    display:flex; flex-flow:column nowrap; 
+    margin-bottom:50px;
+}
+main #profile h1 p img {width:58px;}
+main #profile h1 p:first-child {margin-bottom:10px;}
+main #profile h1 p {
+    font-size:3.125rem; letter-spacing:-0.02em; font-weight:500;
+    line-height:60px;
+}
+main #profile h1 p em {
+    font-size:3.125rem; letter-spacing:-0.02em; font-weight:700;
+    color:#FFD232; 
+}
+/* 내용 */
+main #profile .container {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main #profile .container .left {
+    background:#FFE69A;
+    width:40%; height:600px;
+    transform:translateY(-100px);
+    position:relative;
+}
+main #profile .container .left .photo {
+    height:600px;
+    position:absolute; right:-20px;
+
+}
+main #profile .container .left .photo h2 {
+    font-family: 'Caveat Brush'; font-size:6.250rem; letter-spacing:-0.02em;
+    position:absolute; right:180px; top:-50px;
+}
+main #profile .container .left .photo p {
+    padding-top:58px
+}
+main #profile .container .left .photo p img {}
+main #profile .container .right {
+    width:calc(60% - 50px)
+}
+/* 공통 */
+main #profile .container .right > div {
+    margin-bottom:34px;
+}
+main #profile .container .right h3 {font-family: 'Caveat Brush'; color:#92B4EC; font-size:1.5rem; margin-bottom:25px;}
+main #profile .container .right .contents dl {
+    display:flex; flex-flow:row nowrap;
+}
+main #profile .container .right .contents dl dt {
+    font-weight:700; margin-right:33px; 
+}
+main #profile .container .right .contents dl dd {}
+/* 개별 */
+/* about_me */
+main #profile .container .right .about_me {}
+main #profile .container .right .about_me .contents {
+    width:720px;
+    display:flex; flex-flow:column wrap; height:80px;
+}
+main #profile .container .right .about_me .contents dl {margin-bottom:15px;}
+main #profile .container .right .about_me .contents dl:nth-child(3n) {margin-bottom:0;}
+main #profile .container .right .about_me .contents dl dt {width:81px;}
+main #profile .container .right .about_me .contents dl dd {}
+/* education */
+main #profile .container .right .education {}
+main #profile .container .right .education .contents {}
+main #profile .container .right .education .contents dl:first-child {margin-bottom:15px;}
+main #profile .container .right .education .contents dl dt {width:170px;}
+main #profile .container .right .education .contents dl dd {}
+/* cer_car */
+/* cer */
+main #profile .container .right .cer_car {
+    display:flex; flex-flow:row nowrap; 
+}
+main #profile .container .right .cer_car .cer {margin-right:70px;}
+main #profile .container .right .cer_car .cer .contents {}
+main #profile .container .right .cer_car .cer .contents dl{margin-bottom:15px;}
+main #profile .container .right .cer_car .cer .contents dl dt {}
+main #profile .container .right .cer_car .cer .contents dl dd {}
+/* car */
+main #profile .container .right .cer_car .career {}
+main #profile .container .right .cer_car .career .contents {}
+main #profile .container .right .cer_car .career .contents dl {margin-bottom:15px;}
+main #profile .container .right .cer_car .career .contents dl dt {}
+main #profile .container .right .cer_car .career .contents dl dd {}
+
+/* project_web */
+main #project_web1 {}
+/* 제목 */
+main #project_web1 .title {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main #project_web1 .title h1 {
+    font-family: 'Caveat Brush'; font-size:3.125rem; letter-spacing:-0.02em;
+    color:#92B4EC;
+}
+main #project_web1 .title h2 {
+    display:flex; flex-flow:column nowrap;
+}
+main #project_web1 .title h2 .num {
+    font-family: 'Caveat Brush'; color:#92B4EC; font-size:2.5rem;
+}
+main #project_web1 .title h2 .em {}
+main #project_web1 .title h2 .desc {}
+/* 내용 */
+main #project_web1 .contents {}
+main #project_web1 .contents .img {}
+main #project_web1 .contents .img img {}
+main #project_web1 .contents .info {}
+main #project_web1 .contents .info .project_desc {}
+main #project_web1 .contents .info .project_desc dl {}
+main #project_web1 .contents .info .project_desc dl dt {}
+main #project_web1 .contents .info .project_desc dl dd {}
+main #project_web1 .contents .info p {}
+main #project_web1 .contents .info .link {}
+main #project_web1 .contents .info .link a {}
+
+
+
+
+@keyframes mouse_move {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-30px)}
+}
